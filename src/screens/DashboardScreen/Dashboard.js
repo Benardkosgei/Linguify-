@@ -11,9 +11,9 @@ const Dashboard = ({navigation}) => {
     
       <Title style={styles.sHead}>Learn Today{"\n"}Earn Tommorrow</Title>
       <Text style={styles.topic}>
-        Learn 3+ local languages with us and in few days and, feel you belong'.
+      Enhance your language learning journey with Linguify
       </Text>
-       <Button icon={'arrow-right'} mode="contained-tonal" textColor="#000" buttonColor="#D9D9D9" style={{ borderRadius:10, width:'60%'}} labelStyle={{fontWeight:'800', fontSize:19}} onPress={() => navigation.navigate('Home')}>
+       <Button icon={'arrow-right'} mode="contained-tonal" textColor="#000" buttonColor="#D9D9D9" style={{ borderRadius:5, width:'60%'}} labelStyle={{fontWeight:'800', fontSize:19}} onPress={() => navigation.navigate('Home')}>
             Get Started    
               </Button>
              

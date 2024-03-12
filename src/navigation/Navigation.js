@@ -7,10 +7,11 @@ import Dashboard
  import SplashScreen from 'react-native-splash-screen';
  import Home from '../screens/HomeScreen/Home';
  import DashboardTwo from '../screens/DashboardTwo/DashboardTwo';
+ import ContentPage from '../screens/Content/ContentPage';
+ import AboutScreen from '../screens/History/AboutScreen';
  //Imports
- const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator();
 const Navigation = () => {
-    
         useEffect(() => {
           const timeoutId = setTimeout(() => {
             SplashScreen.hide();
@@ -21,9 +22,11 @@ const Navigation = () => {
   return (
    <NavigationContainer>
     <Stack.Navigator>
-        <Stack.Screen name="Dashboard" component={Dashboard}/>
-        <Stack.Screen name="Home" component={Home}/>
-        <Stack.Screen name="DashboardTwo" component={DashboardTwo}/>
+        <Stack.Screen options={{headerShown:false}} name="Dashboard" component={Dashboard}/>
+        <Stack.Screen options={{headerShown:false}} name="Home" component={Home}/>
+        <Stack.Screen options={{headerTitle:"iamunee"}} name="DashboardTwo" component={DashboardTwo}/>
+        <Stack.Screen name="Content" component={ContentPage}/>
+        <Stack.Screen options={{headerTitle:"About Keiyo"}} name="About" component={AboutScreen}/>
     </Stack.Navigator>
     </NavigationContainer>
   )

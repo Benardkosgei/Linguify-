@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "773044226717",
+    "project_id": "linguify-b6ce4",
+    "storage_bucket": "linguify-b6ce4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:773044226717:android:ae32ae2c5047ff79f32274",
+        "android_client_info": {
+          "package_name": "com.linguify"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMXif2lIGdILgczOp7wZCIVPYpvrPuAHw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

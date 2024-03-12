@@ -12,43 +12,42 @@ const DashboardTwo = ({navigation}) => {
   const images = [
     {
       id: '1',
-      icon:'task-alt',
+      icon:'chevron-right',
+      title: 'Names and their meanings',
+      description: 'E-Lab',
+    },{
+      id: '2',
+      icon:'chevron-right',
       title: 'Basic Words',
       description:
         " interactive & rewarding.",
     },
     {
-      id: '2',
-      icon:'task-alt',
-      title: 'Names and their meanings',
-      description: 'E-Lab',
-    },
-    {
       id: '3',
-      icon:"task-alt",
+      icon:"chevron-right",
       title: 'Clans (Ortinweek)',
       description: 'Codecrafters ',
     },{
       id: '4',
-      icon:"task-alt",
+      icon:"chevron-right",
       title: 'Dowry',
       description: 'Codecrafters ',
     },
     {
       id: '5',
-      icon:"task-alt",
+      icon:"chevron-right",
       title: 'Months (Araek)',
       description: 'Codecrafters ',
     },
     {
       id: '6',
-      icon:"task-alt",
+      icon:"chevron-right",
       title: 'Legendaries ()',
       description: 'Codecrafters ',
     },
     {
       id: '7',
-      icon:"task-alt",
+      icon:"chevron-right",
       title: 'Kalenjin Tribe',
       description: 'Codecrafters ',
     },
@@ -57,72 +56,28 @@ const DashboardTwo = ({navigation}) => {
       icon:"chevron-right",
       title: 'Kalenjin Sub-tribes',
       description: 'Codecrafters ',
-    },{
-      id: '9',
-      icon:"chevron-right",
-      title: 'Kalenjin Sub-tribes',
-      description: 'Codecrafters ',
-    },{
-      id: '10',
-      icon:"chevron-right",
-      title: 'Kalenjin Sub-tribes',
-      description: 'Codecrafters ',
-    },{
-      id: '11',
-      icon:"chevron-right",
-      title: 'Kalenjin Sub-tribes',
-      description: 'Codecrafters ',
-    },{
-      id: '12',
-      icon:"chevron-right",
-      title: 'Kalenjin Sub-tribes',
-      description: 'Codecrafters ',
-    },{
-      id: '13',
-      icon:"chevron-right",
-      title: 'Kalenjin Sub-tribes',
-      description: 'Codecrafters ',
-    },{
-      id: '14',
-      icon:"chevron-right",
-      title: 'Kalenjin Sub-tribes',
-      description: 'Codecrafters ',
-    },{
-      id: '15',
-      icon:"chevron-right",
-      title: 'Kalenjin Sub-tribes',
-      description: 'Codecrafters ',
-    },{
-      id: '16',
-      icon:"chevron-right",
-      title: 'Kalenjin Sub-tribes',
-      description: 'Codecrafters ',
-    },{
-      id: '17',
-      icon:"chevron-right",
-      title: 'Kalenjin Sub-tribes',
-      description: 'Codecrafters ',
-    },{
-      id: '18',
-      icon:"chevron-right",
-      title: 'Kalenjin Sub-tribes',
-      description: 'Codecrafters ',
-    },
-    
-  
+    } 
+
   ];
 
   const renderItem = ({item}) => (
     <TouchableOpacity
       style={styles.item}
-      onPress={() => navigation.navigate('Dashboard')}>
+      onPress={() => navigation.navigate('Content',{title:item.title, description:item.description,itemid:item.id})}>
          <MaterialIcons style={styles.icon} name={item.icon} size={40} color={"black"} />
-         <Text style={styles.title}>{item.title} </Text>
+        <Text style={styles.title}>{item.title} </Text>
     </TouchableOpacity>
   );
 
   return (
     <View style={styles.container}>
+       <TouchableOpacity
+        style={[styles.item,style={marginTop:20,marginHorizontal:10,padding:0}]}
+        onPress={() => navigation.navigate('About')}>
+        <MaterialIcons style={styles.icon} name="chevron-right" size={40} color={'black'} />
+        <Text style={styles.title}>Keiyo History </Text>
+      </TouchableOpacity>
+
       <FlatList
         data={images}
         numColumns={1}
@@ -130,7 +85,6 @@ const DashboardTwo = ({navigation}) => {
         keyExtractor={item => item.id}
         contentContainerStyle={styles.flatlistContainer}
       />
-     
     </View>
   );
 };
