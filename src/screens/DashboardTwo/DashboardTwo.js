@@ -54,7 +54,57 @@ const DashboardTwo = ({navigation}) => {
     },
     {
       id: '8',
-      icon:"task-alt",
+      icon:"chevron-right",
+      title: 'Kalenjin Sub-tribes',
+      description: 'Codecrafters ',
+    },{
+      id: '9',
+      icon:"chevron-right",
+      title: 'Kalenjin Sub-tribes',
+      description: 'Codecrafters ',
+    },{
+      id: '10',
+      icon:"chevron-right",
+      title: 'Kalenjin Sub-tribes',
+      description: 'Codecrafters ',
+    },{
+      id: '11',
+      icon:"chevron-right",
+      title: 'Kalenjin Sub-tribes',
+      description: 'Codecrafters ',
+    },{
+      id: '12',
+      icon:"chevron-right",
+      title: 'Kalenjin Sub-tribes',
+      description: 'Codecrafters ',
+    },{
+      id: '13',
+      icon:"chevron-right",
+      title: 'Kalenjin Sub-tribes',
+      description: 'Codecrafters ',
+    },{
+      id: '14',
+      icon:"chevron-right",
+      title: 'Kalenjin Sub-tribes',
+      description: 'Codecrafters ',
+    },{
+      id: '15',
+      icon:"chevron-right",
+      title: 'Kalenjin Sub-tribes',
+      description: 'Codecrafters ',
+    },{
+      id: '16',
+      icon:"chevron-right",
+      title: 'Kalenjin Sub-tribes',
+      description: 'Codecrafters ',
+    },{
+      id: '17',
+      icon:"chevron-right",
+      title: 'Kalenjin Sub-tribes',
+      description: 'Codecrafters ',
+    },{
+      id: '18',
+      icon:"chevron-right",
       title: 'Kalenjin Sub-tribes',
       description: 'Codecrafters ',
     },
