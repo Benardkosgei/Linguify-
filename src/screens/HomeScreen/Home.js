@@ -16,7 +16,7 @@ const Home = () => {
      
             <Card style={styles.cards}>
               <Card.Actions style={styles.sCardAction}>
-                <Title style={styles.sTitle}>Learn Kalenjin</Title>
+                <Title style={styles.sTitle}>Learn Nandi</Title>
                 <MaterialIcons name="east" size={40} color={"black"} />
                 </Card.Actions>
               </Card>
@@ -29,7 +29,7 @@ const Home = () => {
       <View style={styles.container}>
             <Card style={styles.cards}>
               <Card.Actions style={styles.sCardAction}>
-                <Title style={styles.sTitle}>Learn Luo</Title>
+                <Title style={styles.sTitle}>Learn Kipsigis</Title>
                 <MaterialIcons name="east" size={40} color={"black"} />
                 </Card.Actions>
               </Card>
@@ -41,7 +41,7 @@ const Home = () => {
       <View style={styles.container}>
             <Card style={styles.cards}>
               <Card.Actions style={styles.sCardAction}>
-                <Title style={styles.sTitle}>Learn Kiswahili</Title>
+                <Title style={styles.sTitle}>Learn Keiyo</Title>
                 <MaterialIcons name="east" size={40} color={"black"} />
                 </Card.Actions>
               </Card>
@@ -53,7 +53,18 @@ const Home = () => {
       <View style={styles.container}>
             <Card style={styles.cards}>
               <Card.Actions style={styles.sCardAction}>
-                <Title style={styles.sTitle}>Learn Kikuyu</Title>
+                <Title style={styles.sTitle}>Learn Marakwet</Title>
+                <MaterialIcons name="east" size={40} color={"black"} />
+                </Card.Actions>
+              </Card>
+      </View>
+      </TouchableOpacity>
+      <Divider style={{height: 5, width: '90%', alignSelf: 'center', backgroundColor:'#000080', borderRadius:10, margin: 10,}}/>
+      <TouchableOpacity onPress={letsGo}> 
+      <View style={styles.container}>
+            <Card style={styles.cards}>
+              <Card.Actions style={styles.sCardAction}>
+                <Title style={styles.sTitle}>Learn Pokot</Title>
                 <MaterialIcons name="east" size={40} color={"black"} />
                 </Card.Actions>
               </Card>

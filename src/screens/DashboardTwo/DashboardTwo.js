@@ -32,38 +32,54 @@ const DashboardTwo = ({navigation}) => {
       icon:"chevron-right",
       title: 'Dowry',
       description: 'Codecrafters ',
-    },
-    {
+    },{
       id: '5',
       icon:"chevron-right",
       title: 'Months (Araek)',
       description: 'Codecrafters ',
-    },
-    {
+    },{
       id: '6',
       icon:"chevron-right",
       title: 'Legendaries ()',
       description: 'Codecrafters ',
-    },
-    {
+    },{
       id: '7',
       icon:"chevron-right",
       title: 'Kalenjin Tribe',
       description: 'Codecrafters ',
-    },
-    {
+    },{
       id: '8',
       icon:"chevron-right",
       title: 'Kalenjin Sub-tribes',
       description: 'Codecrafters ',
-    } 
+    },
+    {
+      id: '9',
+      icon:"chevron-right",
+      title: 'Sentences',
+      description: 'Learn how to construct sentences',
+      screen: 'Sentences'
+    },
+    {
+      id: '10',
+      icon:"chevron-right",
+      title: 'Quiz',
+      description: 'Test your knowledge',
+      screen: 'Quiz'
+    }
 
   ];
 
   const renderItem = ({item}) => (
     <TouchableOpacity
       style={styles.item}
-      onPress={() => navigation.navigate('Content',{title:item.title, description:item.description,itemid:item.id})}>
+      onPress={() => {
+        if (item.screen) {
+          navigation.navigate(item.screen);
+        } else {
+          navigation.navigate('Content', {title:item.title, description:item.description,itemid:item.id});
+        }
+      }}>
          <MaterialIcons style={styles.icon} name={item.icon} size={40} color={"black"} />
         <Text style={styles.title}>{item.title} </Text>
     </TouchableOpacity>

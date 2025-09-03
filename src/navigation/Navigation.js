@@ -9,6 +9,8 @@ import Dashboard
  import DashboardTwo from '../screens/DashboardTwo/DashboardTwo';
  import ContentPage from '../screens/Content/ContentPage';
  import AboutScreen from '../screens/History/AboutScreen';
+ import Sentences from '../screens/Sentences/Sentences';
+ import Quiz from '../screens/Quiz/Quiz';
  //Imports
 const Stack = createNativeStackNavigator();
 const Navigation = () => {
@@ -27,6 +29,8 @@ const Navigation = () => {
         <Stack.Screen options={{headerTitle:"iamunee"}} name="DashboardTwo" component={DashboardTwo}/>
         <Stack.Screen name="Content" component={ContentPage}/>
         <Stack.Screen options={{headerTitle:"About Keiyo"}} name="About" component={AboutScreen}/>
+        <Stack.Screen name="Sentences" component={Sentences}/>
+        <Stack.Screen name="Quiz" component={Quiz}/>
     </Stack.Navigator>
     </NavigationContainer>
   )
